@@ -19,7 +19,7 @@ jobs:
       uses: actions/checkout@v6
 
     - name: Create a text file
-      run: echo "Hello, world!" > hello.txt
+      run: echo "Hello, world!" >> ./artifacts/hello.txt
 
     - name: Upload text file
       uses: actions/upload-artifact@v6
